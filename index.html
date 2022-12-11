@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="apple-touch-icon" sizes="192x192" href="img/icon/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="img/icon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Mento</title>
+    
+</head>
+<body>
+    <header>
+        <div class="head container">
+            <div class="logo"><img src="img/logo.svg" alt=""></div>
+            <div class="info">
+                <div class="about"><a href="#">О нас</a></div>
+                <div class="about"><a href="#">Наши преимущества</a></div>
+                <div class="about"><a href="#">Наши эксперты</a></div>
+                <div class="about"><a href="#">Связаться с нами</a></div>
+                <div class="heads s"><a href="#">Цены</a></div>
+                <a class="lang" href="#">
+                    <img src="img/lang.svg" alt="">
+                    <span class="text">Ru</span>
+                    <img src="img/vniz.svg" alt="">
+                    <div class="sub">
+                        <div onclick="textChange('Uz')">Uz</div>
+                        <div onclick="textChange('Ru')">Ru</div>
+                    </div>
+                </a>
+                
+                <div class="gamburger">
+                    <a href="#"><img src="img/hamburger-menu-svgrepo-com.svg" alt=""></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="test container1">
+            <div class="test-info">
+                <h2>Добивайтесь высоких результатов с Mento</h2>
+                <p>Получите профессию своей мечты, высшее образование своей мечты и измените свою жизнь к лучшему</p>
+                <div class="button"><a href="#">Диагностический тест</a></div>
+            </div>
+            <div class="test-video">
+                <img src="img/Rectangle 31.png" alt="">
+                <div class="test-play">
+                    <a href="#" onclick="toggle()">
+                        <div class="anim">
+                            <img src="img/play.svg" alt="" style="display: block;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        let dropDown = document.querySelector('.lang');
+        dropDown.onclick=(()=>{
+            dropDown.classList.toggle('active')
+        })
+    
+    
+        const textChange=(e)=>{
+            document.querySelector('.text').textContent = e
+        }
+    </script>
+
+
+    <div class="" id="popup">
+        <div class="popup container">
+            <div class="cansel"><a href="" onclick="toggle()">X</a></div>
+            <div class="video">
+                <video  controls>
+                    <source src="https://mento.uz/videos/mento-uz.mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggle(){
+        let  popup = document.getElementById('popup');
+        const body = document.querySelector('body')
+        const header = document.querySelector('header')
+        popup.classList.toggle('active')
+        body.style.overflow = 'hidden'
+        header.style.filter = 'blur(20px)'
+        }
+    </script>
+
+
+
+
+    <div class="roadTo container">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="infoRoad swiper-slide">
+                <img src="img/Group 427320527.svg" alt="">
+                <h1>Работа с меторами</h1>
+                <p>Учащиеся могут изучать предмет и повторять уроки, в любое время, 7 дней в неделю, 24 часа в сутки, просматривая видеоуроки. Если возникает какой-нибудь вопрос по пройденной теме , они могут легко задавать вопросы своиму ментору.</p>
+            </div>
+            <div class="infoRoad swiper-slide">
+                <img src="img/Group 427320527  2.svg" alt="">
+                <h1>Работа с меторами</h1>
+                <p>Учащиеся могут изучать предмет и повторять уроки, в любое время, 7 дней в неделю, 24 часа в сутки, просматривая видеоуроки. Если возникает какой-нибудь вопрос по пройденной теме , они могут легко задавать вопросы своиму ментору.</p>
+            </div>
+            <div class="infoRoad swiper-slide">
+                <img src="img/Group 427320527 3.svg" alt="">
+                <h1>Работа с меторами</h1>
+                <p>Учащиеся могут изучать предмет и повторять уроки, в любое время, 7 дней в неделю, 24 часа в сутки, просматривая видеоуроки. Если возникает какой-нибудь вопрос по пройденной теме , они могут легко задавать вопросы своиму ментору.</p>
+            </div>
+            <div class="infoRoad swiper-slide">
+                <img src="img/Group 427320527  2.svg" alt="">
+                <h1>Работа с меторами</h1>
+                <p>Учащиеся могут изучать предмет и повторять уроки, в любое время, 7 дней в неделю, 24 часа в сутки, просматривая видеоуроки. Если возникает какой-нибудь вопрос по пройденной теме , они могут легко задавать вопросы своиму ментору.</p>
+            </div>
+            <div class="infoRoad swiper-slide">
+                <img src="img/Group 427320527.svg" alt="">
+                <h1>Работа с меторами</h1>
+                <p>Учащиеся могут изучать предмет и повторять уроки, в любое время, 7 дней в неделю, 24 часа в сутки, просматривая видеоуроки. Если возникает какой-нибудь вопрос по пройденной теме , они могут легко задавать вопросы своиму ментору.</p>
+            </div>
+            <div class="infoRoad swiper-slide">
+                <img src="img/Group 427320527.svg" alt="">
+                <h1>Работа с меторами</h1>
+                <p>Учащиеся могут изучать предмет и повторять уроки, в любое время, 7 дней в неделю, 24 часа в сутки, просматривая видеоуроки. Если возникает какой-нибудь вопрос по пройденной теме , они могут легко задавать вопросы своиму ментору.</p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    </div>
+
+
+    <div class="platform container">
+        <div class="platform-img"><img src="img/Frame 427320745.svg" alt=""></div>
+        <div class="platform-info">
+            <h2>Платформа онлайн-обучения</h1>
+            <p>Mento.uz -инновационная образовательная платформа, которая предлагает программу онлайн-обучения для абитуриентов. Здесь абитуриенты осваивают темы по основным и обязательным предметам на основе 100 часовых видеоуроков по каждому предмету.</p>
+            <div class="button"><a href="#">Диагностический тест</a></div>
+        </div>
+    </div>
+
+     <div class="roadTo container">
+        <div class="Road">
+            <img src="img/Group 427320527.svg" alt="">
+            <h1>Работа с меторами</h1>
+            <p>Учащиеся могут изучать предмет и повторять уроки, в любое время, 7 дней в неделю, 24 часа в сутки, просматривая видеоуроки. Если возникает какой-нибудь вопрос по пройденной теме , они могут легко задавать вопросы своиму ментору.</p>
+        </div>
+        <div class="Road">
+            <img src="img/Group 427320527 4.svg" alt="">
+            <h1>Работа с меторами</h1>
+            <p>Учащиеся могут изучать предмет и повторять уроки, в любое время, 7 дней в неделю, 24 часа в сутки, просматривая видеоуроки. Если возникает какой-нибудь вопрос по пройденной теме , они могут легко задавать вопросы своиму ментору.</p>
+        </div>
+        <div class="Road">
+            <img src="img/Group 427320527 3.svg" alt="">
+            <h1>Работа с меторами</h1>
+            <p>Учащиеся могут изучать предмет и повторять уроки, в любое время, 7 дней в неделю, 24 часа в сутки, просматривая видеоуроки. Если возникает какой-нибудь вопрос по пройденной теме , они могут легко задавать вопросы своиму ментору.</p>
+        </div>
+    </div>
+
+    <div class="courses">
+        <div class="container">
+            <h1>Курсы Mento</h1>
+            <div class="courses-info">
+                <div class="course">
+                    <img src="img/Rectangle 10039 1.svg" alt="">
+                    <div class="c-info">
+                        <h1>Математика</h1>
+                        <p>Абитуриенту предоставляются видеоуроки, конспекты и тесты по данному предмету, а также будет прикреплен ментор.
+                        </p>
+                        <ul>
+                            <li><img src="img/hour.svg" alt=""><span>100 hours</span></li>
+                            <li><img src="img/book.svg" alt=""><span>3 books</span></li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="course">
+                    <img src="img/Rectangle 10039 2.svg" alt="">
+                    <div class="c-info">
+                        <h1>Математика</h1>
+                        <p>Абитуриенту предоставляются видеоуроки, конспекты и тесты по данному предмету, а также будет прикреплен ментор.
+                        </p>
+                        <ul>
+                            <li><img src="img/hour.png" alt=""><span>100 hours</span></li>
+                            <li><img src="img/book.png" alt=""><span>3 books</span></li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="course">
+                    <img src="img/Rectangle 10039 3.svg" alt="">
+                    <div class="c-info">
+                        <h1>Математика</h1>
+                        <p>Абитуриенту предоставляются видеоуроки, конспекты и тесты по данному предмету, а также будет прикреплен ментор.
+                        </p>
+                        <ul>
+                            <li><img src="img/hour.png" alt=""><span>100 hours</span></li>
+                            <li><img src="img/book.png" alt=""><span>3 books</span></li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="course">
+                    <img src="img/Rectangle 10039 4.svg" alt="">
+                    <div class="c-info">
+                        <h1>Математика</h1>
+                        <p>Абитуриенту предоставляются видеоуроки, конспекты и тесты по данному предмету, а также будет прикреплен ментор.
+                        </p>
+                        <ul>
+                            <li><img src="img/hour.png" alt=""><span>100 hours</span></li>
+                            <li><img src="img/book.png" alt=""><span>3 books</span></li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="course">
+                    <img src="img/Rectangle 10039 5.svg" alt="">
+                    <div class="c-info">
+                        <h1>Математика</h1>
+                        <p>Абитуриенту предоставляются видеоуроки, конспекты и тесты по данному предмету, а также будет прикреплен ментор.
+                        </p>
+                        <ul>
+                            <li><img src="img/hour.png" alt=""><span>100 hours</span></li>
+                            <li><img src="img/book.png" alt=""><span>3 books</span></li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="course">
+                    <img src="img/Rectangle 10039 6.svg" alt="">
+                    <div class="c-info">
+                        <h1>Математика</h1>
+                        <p>Абитуриенту предоставляются видеоуроки, конспекты и тесты по данному предмету, а также будет прикреплен ментор.
+                        </p>
+                        <ul>
+                            <li><img src="img/hour.png" alt=""><span>100 hours</span></li>
+                            <li><img src="img/book.png" alt=""><span>3 books</span></li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+    <div class="boxes container">
+        <h1>Наши эксперты</h1>
+        <div class="boxes1">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="box swiper-slide">
+                    <img src="img/Rectangle 542.png" alt="">
+                    <h2>Алексей</h2>
+                    <span>Русский язык</span>
+                    <p>Метод обучения в Mento невероятен. С этой учебной программой все ваши учебные навыки несомненно улучшатся.</p>
+                </div>
+                <div class="box swiper-slide">
+                    <img src="img/Rectangle 542.png" alt="">
+                    <h2>Алексей</h2>
+                    <span>Русский язык</span>
+                    <p>Метод обучения в Mento невероятен. С этой учебной программой все ваши учебные навыки несомненно улучшатся.</p>
+                </div>
+                <div class="box swiper-slide">
+                    <img src="img/Rectangle 542.png" alt="">
+                    <h2>Алексей</h2>
+                    <span>Русский язык</span>
+                    <p>Метод обучения в Mento невероятен. С этой учебной программой все ваши учебные навыки несомненно улучшатся.</p>
+                </div>
+                <div class="box swiper-slide">
+                    <img src="img/Rectangle 542.png" alt="">
+                    <h2>Алексей</h2>
+                    <span>Русский язык</span>
+                    <p>Метод обучения в Mento невероятен. С этой учебной программой все ваши учебные навыки несомненно улучшатся.</p>
+                </div>
+                <div class="box swiper-slide">
+                    <img src="img/Rectangle 542.png" alt="">
+                    <h2>Алексей</h2>
+                    <span>Русский язык</span>
+                    <p>Метод обучения в Mento невероятен. С этой учебной программой все ваши учебные навыки несомненно улучшатся.</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>
+    </div>    
+
+
+    <div class="form container2">
+        <h4>Поможем выбрать</h4>
+        <p>Инновационная платформа для повышения качества образования. Вы получите знания, которые помогут вам получить профессию своей мечты и изменить свою жизнь.</p>
+        <form action="#">
+            <input placeholder="Ваше имя и фамилия *" type="text" required>
+            <input placeholder="Ваш номер телефона *" type="tel" required>
+            <textarea data-error="" placeholder="Ваш вопрос *"></textarea>
+            <button>Отправить</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="container footer">
+            <div class="f-mento"><img src="img/mento logo f.svg" alt=""><p>Инновационная платформа для повышения качества образования.</p></div>
+            <div class="f-tel">
+                <p><a href="#">Политика конфиденциальности</a></p>
+                <p><a href="tel: +998930438253">+998 93 043-82-53</a></p>
+                <p><a href="tel: +998930435382">+998 93 043-53-82</a></p>
+            </div>
+            <div class="f-soc">
+                <a href="#"><img src="img/insta.svg" alt=""></a>
+                <a href="#"><img src="img/facebook.svg" alt=""></a>
+                <a href="#"><img src="img/twitt.svg" alt=""></a>
+                <a href="#"><img src="img/in.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="f-info">© 2022 Mento. All rights reserved</div>    
+    </footer>
+
+
+ 
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          1000: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          580: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: bold;
+    src: url(Gilroy-Bold.woff2);
+}
+@font-face {
+    font-family: regular;
+    src: url(Gilroy-Regular.woff2);
+}
+@font-face {
+    font-family: medium;
+    src: url(./Gilroy-Medium.woff2);
+}
+@font-face {
+    font-family: semi;
+    src: url(Gilroy-SemiBold.woff2);
+}
+
+
