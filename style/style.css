@@ -574,7 +574,7 @@ footer {
 }
 @media (max-width: 800px) {
   #popup {
-    width: calc(0.95vw - 104px);
+    width: 55%;
   }
   .test-info {
     max-width: 100%;
@@ -618,5 +618,20 @@ footer {
     padding-bottom: 50px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media (max-width: 370px) {
+  .button a {
+    width: inherit;
+  }
+}
+@media (max-width: 400px) {
+  .course {
+    width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  .course {
+    width: 280px;
   }
 }
